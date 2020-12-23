@@ -8,6 +8,15 @@ var box1, pig1,pig3;
 var backgroundImg,platform;
 var bird, slingshot;
 
+var s1 = [44,55,66,77]
+var s2 = [88,99,11,22]
+var student = []
+student.push(s1);
+student.push(s2);
+console.log(student);
+student.pop();
+console.log(student.length);
+
 
 function preload() {
     backgroundImg = loadImage("sprites/bg.png");
@@ -79,6 +88,6 @@ function mouseReleased(){
 
 function keyPressed(){
     if(keyCode === 32){
-        slingshot.attach(bird.body);
+      //  slingshot.attach(bird.body);
     }
 }
